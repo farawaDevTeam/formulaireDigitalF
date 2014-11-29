@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.1.14
+- http://www.phpmyadmin.net
+-
+- Client :  127.0.0.1
+- Généré le :  Sam 29 Novembre 2014 à 18:53
+- Version du serveur :  5.6.17
+- Version de PHP :  5.5.12
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="digitalf" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="Formulaire">
+                CREATE TABLE `formulaire` (
+                  `ID` int(11) NOT NULL AUTO_INCREMENT,
+                  `Prenom` varchar(20) NOT NULL,
+                  `Nom` varchar(20) NOT NULL,
+                  `Profession` varchar(20) NOT NULL,
+                  `Email` varchar(40) NOT NULL,
+                  `NomEntrepriseDigitale` varchar(40) NOT NULL,
+                  `DomaineActivite` varchar(20) NOT NULL,
+                  `Url1` varchar(40) NOT NULL,
+                  `Url2` varchar(40) NOT NULL,
+                  `Url3` varchar(40) NOT NULL,
+                  `ChiffreAffaire` int(11) NOT NULL,
+                  `ServicesSouhaites` varchar(40) NOT NULL,
+                  `BoolNextRdv` tinyint(1) NOT NULL,
+                  `NextRdv` date NOT NULL,
+                  PRIMARY KEY (`ID`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Base de données :  'digitalf'
+    -->
+    <database name="digitalf">
+        <!-- Table Formulaire -->
+    </database>
+</pma_xml_export>

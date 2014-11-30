@@ -5,7 +5,7 @@
 - http://www.phpmyadmin.net
 -
 - Client :  127.0.0.1
-- Généré le :  Sam 29 Novembre 2014 à 18:53
+- Généré le :  Dim 30 Novembre 2014 à 19:25
 - Version du serveur :  5.6.17
 - Version de PHP :  5.5.12
 -->
@@ -16,7 +16,7 @@
     -->
     <pma:structure_schemas>
         <pma:database name="digitalf" collation="latin1_swedish_ci" charset="latin1">
-            <pma:table name="Formulaire">
+            <pma:table name="formulaire">
                 CREATE TABLE `formulaire` (
                   `ID` int(11) NOT NULL AUTO_INCREMENT,
                   `Prenom` varchar(20) NOT NULL,
@@ -32,8 +32,9 @@
                   `ServicesSouhaites` varchar(40) NOT NULL,
                   `BoolNextRdv` tinyint(1) NOT NULL,
                   `NextRdv` date NOT NULL,
+                  `Genre` text NOT NULL,
                   PRIMARY KEY (`ID`)
-                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+                ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
             </pma:table>
         </pma:database>
     </pma:structure_schemas>
@@ -42,6 +43,6 @@
     - Base de données :  'digitalf'
     -->
     <database name="digitalf">
-        <!-- Table Formulaire -->
+        <!-- Table formulaire -->
     </database>
 </pma_xml_export>

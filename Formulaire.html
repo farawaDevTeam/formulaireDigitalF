@@ -19,17 +19,17 @@
 
 
 
-       <label class="text" for="nom">Votre nom :* </label><br/><br/>
+       <label class="text" for="Nom">Votre nom :* </label><br/><br/>
 
-       <input type="text" name="nom" id="nom" class="champ"  required/>
+       <input type="text" name="Nom" id="Nom" class="champ"  required/>
        <br/><br/>
        <label for="prenom" class="text">Votre prénom :*</label><br/><br/>
 
-       <input type="text" name="prenom" id="prenom" class="champ" required/>
+       <input type="text" name="Prenom" id="Prenom" class="champ" required/>
        <br/><br/>
        <label for="email" class="text">Votre e-mail :*</label><br/><br/>
 
-       <input type="email" name="email" id="email"  class="champ" required/>
+       <input type="email" name="Email" id="Email"  class="champ" required/>
        <br/>
        <p class="text"> Votre Genre:*</p>
         <input type="radio" name="sexe" value="Feminin" id="Feminin" /><label for="Feminin" class="text1">Feminin</label><br/><br/>
@@ -39,14 +39,14 @@
        <label for="profession" class="text">Votre profession :*</label><br/><br/>
 
 
-       <input type="profession" name="profession" id="profession"  class="champ" required/>
+       <input name="Profession" id="Profession"  class="champ" required/>
        <br/><br/>
    </div>
  
    <div class="about-your-company">
        <legend class="text">Votre future e-Entreprise</legend> <!-- Titre du fieldset --><br/>
        <label class="text" for="NomEntreprise">Nom:* </label><br/><br/>
-       <input type="text" name="NomEntreprise" id="NomEntreprise" class="champ"  required/>
+       <input type="text" name="NomEntreprise" id="NomEntrepriseDigitale" class="champ"  required/>
        <br/><br/>
        <label class="text" for="DomaineActivite">Domaine d'activité:* </label><br/><br/>
        <input type="text" name="DomaineActivite" id="DomaineActivite" class="champ"  required/>
@@ -55,11 +55,12 @@
        <input type="number" name="ChiffreAffaire" id="ChiffreAffaire" class="champ"  required/>
        <br/><br/>
        <label class="text" for="ServicesSouhaites">Vos e-Besoins:* </label><br/><br/>
-       <input type="text" name="ServicesSouhaites" id="ServicesSouhaites" class="champ1"  required/>
+       <textarea  rows="4" cols="50" type="textarea" name="ServicesSouhaites" id="ServicesSouhaites" class="champ1"  required/>
+     </textarea>
        <br/><br/>
         <p class="text">Prochain Rdv? :</p>
-        <input type="radio" name="avis" value="yes" id="yes" /><label for="yes" class="text1">Oui</label><br/><br/>
-        <input type="radio" name="avis" value="no" id="no"/><label for="no" class="text1">Non</label><br/><br/>
+        <input type="radio" name="avis" value="true" id="yes" /><label for="yes" class="text1">Oui</label><br/><br/>
+        <input type="radio" name="avis" value="false" id="no"/><label for="no" class="text1">Non</label><br/><br/>
         <label class="text" for="NextRdv">Date d'un prochain Rdv ?: </label><br/><br/>
         <input type="date" name="NextRdv" id="NextRdv" class="champ"/>
         <p class="text">Propositions d'urls :</p>

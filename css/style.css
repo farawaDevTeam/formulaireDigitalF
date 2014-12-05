@@ -1,22 +1,22 @@
 .champ
 {
-background-color: rgb(255,155,89);
-color: rgb(255,255,255);
+background-color:white;
+color:rgb(255,155,89);
 font-family: Goudy Old Style,serif;
 font-size: 14px;
 width: 90%;
 height: 25px;
-border: none;
+border: 1px solid rgb(255,155,89);
 }
 .champ1
 {
-background-color: rgb(255,155,89);
-color: rgb(255,255,255);
+background-color: white;
+color: rgb(255,155,89);;
 font-family: Goudy Old Style,serif;
 font-size: 14px;
 width: 90%;
 height: 90px;
-border: none;
+border: 1px solid rgb(255,155,89);
 }
 .container
 {
@@ -31,16 +31,18 @@ border: none;
 {
 	font-family: Goudy Old Style,serif;
 	font-size:20px;
+	color: rgb(78, 78, 80);
 	font-style: italic;
 }
 .text1
 {
 	font-family: Goudy Old Style,serif;
 	font-size:20px;
+	color: rgb(78, 78, 80);
 }
 .about-you,.about-your-company
 {
-	background-color: rgb(220,220,220);
+	background-color:white;
 	position:relative;
 	margin-top: 10px;
 	padding-left: 8%;
@@ -53,7 +55,14 @@ border: none;
 
 }
 
-legend
+#legend1
+{
+	display: inline-block;
+	position: relative;
+	left: 30%;
+    
+}
+#legend2
 {
 	display: inline-block;
 	position: relative;
@@ -71,16 +80,26 @@ body
 	position:relative;
 	left:15%;
 	font-family: Goudy Old Style,serif;
-	font-size:60px;
+	font-size:40px;
 	font-style: italic;
 	padding-bottom: 0px;
 }
 .submit
 {
 	position: relative;
-	left:65%;
-	right: 1%;
+	left:57%;
+	right:10%;
 	width:33%;
+	height: 30px;
+	border: 1px solid rgb(255,155,89);
+	color: rgb(255,155,89);
+	background-color: white;
+
+}
+.submit:hover
+{
+	color: white;
+	background-color:  rgb(255,155,89);
 }
 img
 {
@@ -91,23 +110,25 @@ z-index: 2;
 {
 .champ
 {
-background-color: rgb(255,155,89);
-color: rgb(255,255,255);
+background-color:white;
+border: 1px solid rgb(255,155,89);
+color: rgb(255,155,89);
 font-family: Goudy Old Style,serif;
 font-size: 14px;
 width: 90%;
 height: 25px;
-border: none;
+border: 1px solid rgb(255,155,89);
 }
 .champ1
 {
-background-color: rgb(255,155,89);
-color: rgb(255,255,255);
+background-color:white;
+border: 1px solid rgb(255,155,89);
+color: rgb(255,155,89);
 font-family: Goudy Old Style,serif;
 font-size: 14px;
 width: 90%;
 height: 90px;
-border: none;
+
 }
 .container
 {
@@ -131,7 +152,7 @@ border: none;
 }
 .about-you,.about-your-company
 {
-	background-color: rgb(220,220,220);
+	background-color: white;
 	position:relative;
 	margin-top: 10px;
 	padding-left: 8%;
@@ -144,7 +165,14 @@ border: none;
 
 }
 
-legend
+#legend1
+{
+	display: inline-block;
+	position: relative;
+	left: 20%;
+    
+}
+#legend2
 {
 	display: inline-block;
 	position: relative;
@@ -162,7 +190,7 @@ body
 	position:relative;
 	left:15%;
 	font-family: Goudy Old Style,serif;
-	font-size:60px;
+	font-size:40px;
 	font-style: italic;
 	padding-bottom: 0px;
 }
@@ -193,23 +221,25 @@ z-index: 2;
 }
 .champ
 {
-background-color: rgb(255,155,89);
-color: rgb(255,255,255);
+background-color:white;
+border: 1px solid rgb(255,155,89);
+color: rgb(255,155,89);
 font-family: Goudy Old Style,serif;
 font-size: 14px;
 width: 90%;
 height: 25px;
-border: none;
+
 }
 .champ1
 {
-background-color: rgb(255,155,89);
-color: rgb(255,255,255);
+background-color:white;
+border: 1px solid rgb(255,155,89);
+color: rgb(255,155,89);
 font-family: Goudy Old Style,serif;
 font-size: 14px;
 width: 90%;
 height: 90px;
-border: none;
+
 }
 .container
 {
@@ -233,7 +263,7 @@ border: none;
 }
 .about-you,.about-your-company
 {
-	background-color: rgb(220,220,220);
+	background-color:white;
 	position:relative;
 	margin-top: 10px;
 	padding-left: 8%;
@@ -246,11 +276,18 @@ border: none;
 
 }
 
-legend
+#legend1
 {
 	display: inline-block;
 	position: relative;
-	left: 30%;
+	left: 5%;
+    
+}
+#legend2
+{
+	display: inline-block;
+	position: relative;
+	left: 10%;
     
 }
 body

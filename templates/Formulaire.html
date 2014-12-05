@@ -12,51 +12,51 @@
     	<div class="container">
     	<form method="post" action="../php/traitement.php">
   <p class="form">
- Gardons le contact
+ GARDONS LE CONTACT
   </p>
    <div class="about-you">
-       <legend class="text">Parlez nous de vous</legend> <!-- Titre du fieldset --> <br/>
+       <legend class="text" id="legend1">PARLEZ NOUS DE VOUS</legend> <!-- Titre du fieldset --> <br/>
 
 
 
-       <label class="text" for="Nom">Votre nom :* </label><br/><br/>
+       <label class="text" for="Nom">Votre nom :* </label><br/>
 
        <input type="text" name="Nom" id="Nom" class="champ"  required/>
        <br/><br/>
-       <label for="prenom" class="text">Votre prénom :*</label><br/><br/>
+       <label for="prenom" class="text">Votre prénom :*</label><br/>
 
        <input type="text" name="Prenom" id="Prenom" class="champ" required/>
        <br/><br/>
-       <label for="email" class="text">Votre e-mail :*</label><br/><br/>
+       <label for="email" class="text">Votre e-mail :*</label><br/>
 
        <input type="email" name="Email" id="Email"  class="champ" required/>
        <br/><br/>
        
-       <label for="profession" class="text">Votre profession :*</label><br/><br/>
+       <label for="profession" class="text">Votre profession :*</label><br/>
 
        <input name="Profession" id="Profession"  class="champ" required/>
        <br/><br/>
    </div>
  
    <div class="about-your-company">
-       <legend class="text">Vos Projets</legend> <!-- Titre du fieldset --><br/>
-       <label class="text" for="NomEntreprise">Nom:* </label><br/><br/>
+       <legend class="text" id = "legend2">VOS PROJETS</legend> <!-- Titre du fieldset --><br/>
+       <label class="text" for="NomEntreprise">Nom:* </label><br/>
        <input type="text" name="NomEntreprise" id="NomEntrepriseDigitale" class="champ"  required/>
        <br/><br/>
-       <label class="text" for="DomaineActivite">Domaine d'activité:* </label><br/><br/>
+       <label class="text" for="DomaineActivite">Domaine d'activité:* </label><br/>
        <input type="text" name="DomaineActivite" id="DomaineActivite" class="champ"  required/>
        <br/><br/>
-       <label class="text" for="ChiffreAffaire">Chiffre d'Affaires d'ici 1 an:* </label><br/><br/>
+       <label class="text" for="ChiffreAffaire">Chiffre d'Affaires d'ici 1 an:* </label><br/>
        <input type="number" name="ChiffreAffaire" id="ChiffreAffaire" class="champ"  required/>
        <br/><br/>
-       <label class="text" for="ServicesSouhaites">Vos e-Besoins:* </label><br/><br/>
+       <label class="text" for="ServicesSouhaites">Vos e-Besoins:* </label><br/>
        <textarea  rows="4" cols="50" type="textarea" name="ServicesSouhaites" id="ServicesSouhaites" class="champ1"  required/>
      </textarea>
        <br/><br/>
         <p class="text">Envisagez vous de nous recontacter ? :</p>
         <input type="radio" name="avis" value="true" id="yes" /><label for="yes" class="text1">Oui</label><br/><br/>
         <input type="radio" name="avis" value="false" id="no"/><label for="no" class="text1">Non</label><br/><br/>
-        <label class="text" for="NextRdv" hidden="true">Date d'un prochain Rdv ?: </label><br/><br/>
+        <label class="text" for="NextRdv" hidden="true">Date d'un prochain Rdv ?: </label><br/>
         <input type="date" name="NextRdv" id="NextRdv" class="champ" hidden="true" -webkit-min-logical-width:300px/>
         <p class="text" hidden="true">Propositions d'urls :</p>
         <label for="Url1" class="text" hidden="true">Url 1:</label><br/>
@@ -66,7 +66,7 @@
        <label for="Url3" class="text" hidden="true">Url 3:</label><br/>
        <input type="url" name="Url3" id="Url3" class="champ" hidden="true"/> <br/><br/>
    </div>
-    	<input  class ="submit" type="image" src="../images/bouton.jpg"/>
+    	<input class ="submit" type="submit" value="Soumettre"/>
     </form>
 </div>
     <script src="jquery.js"></script>

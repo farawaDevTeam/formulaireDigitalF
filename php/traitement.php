@@ -9,9 +9,9 @@ function insert_formulaire($post)
 
 //Insertion de l'annonce dans la base de donnée
    $req=$bdd->prepare('INSERT INTO formulaire(Nom,Prenom,Profession,Email,NomEntrepriseDigitale,DomaineActivite,Url1,Url2,Url3,ChiffreAffaire,
-   	ServicesSouhaites,BoolNextRdv,NextRdv,Genre)
+   	ServicesSouhaites,BoolNextRdv,NextRdv)
   VALUES(:Nom,:Prenom,:Profession,:Email,:NomEntrepriseDigitale,:DomaineActivite,:Url1,:Url2,:Url3,:ChiffreAffaire,
-   	:ServicesSouhaites,:BoolNextRdv,:NextRdv,:Genre)');
+   	:ServicesSouhaites,:BoolNextRdv,:NextRdv)');
   $req -> execute(array(
               'Nom'=>$post['Nom'],
               'Prenom'=>$post['Prenom'],
@@ -25,8 +25,8 @@ function insert_formulaire($post)
               'ChiffreAffaire'=>$post['ChiffreAffaire'],
               'ServicesSouhaites'=>$post['ServicesSouhaites'],
               'BoolNextRdv'=>$post['avis'],
-              'NextRdv'=>$post['NextRdv'],
-              'Genre'=>$post['sexe']
+              'NextRdv'=>$post['NextRdv']
+              
 
   ));
 print_r($post);

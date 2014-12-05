@@ -4,15 +4,15 @@
         <meta charset="utf-8" />
         <title>Digital F</title>
         <link rel="stylesheet" href="../css/style.css" />
+         <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
     </head>
 
     <body>
-    	
+    	<img src="../images/background-image.png">
     	<div class="container">
-    <form method="post" action="traitement.php">
-    	<form method="post" action="traitement.php">
+    	<form method="post" action="../php/traitement.php">
   <p class="form">
-  Fiche de renseignements Digital F
+ Gardons le contact
   </p>
    <div class="about-you">
        <legend class="text">Parlez nous de vous</legend> <!-- Titre du fieldset --> <br/>
@@ -30,21 +30,16 @@
        <label for="email" class="text">Votre e-mail :*</label><br/><br/>
 
        <input type="email" name="Email" id="Email"  class="champ" required/>
-       <br/>
-       <p class="text"> Votre Genre:*</p>
-        <input type="radio" name="sexe" value="Feminin" id="Feminin" /><label for="Feminin" class="text1">Feminin</label><br/><br/>
-        <input type="radio" name="sexe" value="Masculin" id="Masculin"/><label for="Masculin" class="text1">Masculin</label><br/><br/>
-
-
+       <br/><br/>
+       
        <label for="profession" class="text">Votre profession :*</label><br/><br/>
-
 
        <input name="Profession" id="Profession"  class="champ" required/>
        <br/><br/>
    </div>
  
    <div class="about-your-company">
-       <legend class="text">Votre future e-Entreprise</legend> <!-- Titre du fieldset --><br/>
+       <legend class="text">Vos Projets</legend> <!-- Titre du fieldset --><br/>
        <label class="text" for="NomEntreprise">Nom:* </label><br/><br/>
        <input type="text" name="NomEntreprise" id="NomEntrepriseDigitale" class="champ"  required/>
        <br/><br/>
@@ -58,22 +53,24 @@
        <textarea  rows="4" cols="50" type="textarea" name="ServicesSouhaites" id="ServicesSouhaites" class="champ1"  required/>
      </textarea>
        <br/><br/>
-        <p class="text">Prochain Rdv? :</p>
+        <p class="text">Envisagez vous de nous recontacter ? :</p>
         <input type="radio" name="avis" value="true" id="yes" /><label for="yes" class="text1">Oui</label><br/><br/>
         <input type="radio" name="avis" value="false" id="no"/><label for="no" class="text1">Non</label><br/><br/>
-        <label class="text" for="NextRdv">Date d'un prochain Rdv ?: </label><br/><br/>
-        <input type="date" name="NextRdv" id="NextRdv" class="champ"/>
-        <p class="text">Propositions d'urls :</p>
-        <label for="Url1" class="text">Url 1:</label><br/>
-       <input type="url" name="Url1" id="Url1" class="champ"/> <br/><br/>
-       <label for="Url2" class="text">Url 2:</label><br/>
-       <input type="url" name="Url2" id="Url2" class="champ"/> <br/><br/>
-       <label for="Url3" class="text">Url 3:</label><br/>
-       <input type="url" name="Url3" id="Url3" class="champ"/> <br/><br/>
+        <label class="text" for="NextRdv" hidden="true">Date d'un prochain Rdv ?: </label><br/><br/>
+        <input type="date" name="NextRdv" id="NextRdv" class="champ" hidden="true" -webkit-min-logical-width:300px/>
+        <p class="text" hidden="true">Propositions d'urls :</p>
+        <label for="Url1" class="text" hidden="true">Url 1:</label><br/>
+       <input type="url" name="Url1" id="Url1" class="champ" hidden="true"/> <br/><br/>
+       <label for="Url2" class="text" hidden="true">Url 2:</label><br/>
+       <input type="url" name="Url2" id="Url2" class="champ" hidden="true"/> <br/><br/>
+       <label for="Url3" class="text" hidden="true">Url 3:</label><br/>
+       <input type="url" name="Url3" id="Url3" class="champ" hidden="true"/> <br/><br/>
    </div>
     	<input  class ="submit" type="image" src="../images/bouton.jpg"/>
     </form>
 </div>
+    <script src="jquery.js"></script>
+    <script src="formulaireScript.js"></script>
     </body>
 
     <footer>

@@ -1,17 +1,19 @@
 .champ
 {
-background-color: rgb(50,89,104);
-color: rgb(220,220,220);
-font-family: Georgia,serif;
+background-color: rgb(255,155,89);
+color: rgb(255,255,255);
+font-family: Goudy Old Style,serif;
+font-size: 14px;
 width: 90%;
 height: 25px;
 border: none;
 }
 .champ1
 {
-background-color: rgb(50,89,104);
-color: rgb(220,220,220);
-font-family: Georgia,serif;
+background-color: rgb(255,155,89);
+color: rgb(255,255,255);
+font-family: Goudy Old Style,serif;
+font-size: 14px;
 width: 90%;
 height: 90px;
 border: none;
@@ -21,19 +23,19 @@ border: none;
 	width: 50%;
 	position: absolute;
 	left: 25%;
-	right: 25%;
 	background-color: white;
-	margin-top: 10%;
+	margin-top: -20%;
+	z-index: 1;
 }
 .text 
 {
-	font-family: Georgia,serif;
+	font-family: Goudy Old Style,serif;
 	font-size:20px;
 	font-style: italic;
 }
 .text1
 {
-	font-family: Georgia,serif;
+	font-family: Goudy Old Style,serif;
 	font-size:20px;
 }
 .about-you,.about-your-company
@@ -55,7 +57,7 @@ legend
 {
 	display: inline-block;
 	position: relative;
-	left: 22%;
+	left: 30%;
     
 }
 body
@@ -66,7 +68,9 @@ body
 .form
 {
 	display:inline-block;
-	font-family: Georgia,serif;
+	position:relative;
+	left:15%;
+	font-family: Goudy Old Style,serif;
 	font-size:60px;
 	font-style: italic;
 	padding-bottom: 0px;
@@ -74,5 +78,198 @@ body
 .submit
 {
 	position: relative;
-	left:80%;
+	left:65%;
+	right: 1%;
+	width:33%;
+}
+img
+{
+width: 100%;
+z-index: 2;
+}
+@media screen and (max-width: 1280px) and (min-width: 900px)
+{
+.champ
+{
+background-color: rgb(255,155,89);
+color: rgb(255,255,255);
+font-family: Goudy Old Style,serif;
+font-size: 14px;
+width: 90%;
+height: 25px;
+border: none;
+}
+.champ1
+{
+background-color: rgb(255,155,89);
+color: rgb(255,255,255);
+font-family: Goudy Old Style,serif;
+font-size: 14px;
+width: 90%;
+height: 90px;
+border: none;
+}
+.container
+{
+	width: 60%;
+	position: absolute;
+	left: 20%;
+	background-color: white;
+	margin-top: -20%;
+	z-index: 1;
+}
+.text 
+{
+	font-family: Goudy Old Style,serif;
+	font-size:20px;
+	font-style: italic;
+}
+.text1
+{
+	font-family: Goudy Old Style,serif;
+	font-size:20px;
+}
+.about-you,.about-your-company
+{
+	background-color: rgb(220,220,220);
+	position:relative;
+	margin-top: 10px;
+	padding-left: 8%;
+	padding-bottom: 2%;
+	padding-top:30px;
+	left: 2%;
+	width: 88%;
+
+	
+
+}
+
+legend
+{
+	display: inline-block;
+	position: relative;
+	left: 30%;
+    
+}
+body
+{
+  background-image: url(../images/background.png);
+  background-repeat:repeat;
+}
+.form
+{
+	display:inline-block;
+	position:relative;
+	left:15%;
+	font-family: Goudy Old Style,serif;
+	font-size:60px;
+	font-style: italic;
+	padding-bottom: 0px;
+}
+.submit
+{
+	position: relative;
+	left:65%;
+	right: 1%;
+	width:33%;
+}
+img
+{
+width: 100%;
+z-index: 2;
+}
+}
+@media screen and (min-width: 780px) and (max-width: 899px)
+{
+.form
+{
+	display:inline-block;
+	position:relative;
+	left:20%;
+	font-family: Goudy Old Style,serif;
+	font-size:40px;
+	font-style: italic;
+	padding-bottom: 0px;
+}
+.champ
+{
+background-color: rgb(255,155,89);
+color: rgb(255,255,255);
+font-family: Goudy Old Style,serif;
+font-size: 14px;
+width: 90%;
+height: 25px;
+border: none;
+}
+.champ1
+{
+background-color: rgb(255,155,89);
+color: rgb(255,255,255);
+font-family: Goudy Old Style,serif;
+font-size: 14px;
+width: 90%;
+height: 90px;
+border: none;
+}
+.container
+{
+	width: 60%;
+	position: absolute;
+	left: 20%;
+	background-color: white;
+	margin-top: -20%;
+	z-index: 2;
+}
+.text 
+{
+	font-family: Goudy Old Style,serif;
+	font-size:20px;
+	font-style: italic;
+}
+.text1
+{
+	font-family: Goudy Old Style,serif;
+	font-size:20px;
+}
+.about-you,.about-your-company
+{
+	background-color: rgb(220,220,220);
+	position:relative;
+	margin-top: 10px;
+	padding-left: 8%;
+	padding-bottom: 2%;
+	padding-top:30px;
+	left: 2%;
+	width: 88%;
+
+	
+
+}
+
+legend
+{
+	display: inline-block;
+	position: relative;
+	left: 30%;
+    
+}
+body
+{
+  background-image: url(../images/background.png);
+  background-repeat:repeat;
+}
+
+.submit
+{
+	position: relative;
+	left:65%;
+	right: 1%;
+	width:33%;
+}
+img
+{
+width: 100%;
+position: relative;
+z-index: 1;
+}
 }

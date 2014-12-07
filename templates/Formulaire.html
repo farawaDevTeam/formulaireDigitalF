@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+         <link href='http://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
         <meta charset="utf-8" />
         <title>Digital F</title>
         <link rel="stylesheet" href="../css/style.css" />
@@ -46,8 +47,17 @@
        <label class="text" for="DomaineActivite">Domaine d'activité:* </label><br/>
        <input type="text" name="DomaineActivite" id="DomaineActivite" class="champ"  required/>
        <br/><br/>
-       <label class="text" for="ChiffreAffaire">Chiffre d'Affaires d'ici 1 an:* </label><br/>
-       <input type="number" name="ChiffreAffaire" id="ChiffreAffaire" class="champ"  required/>
+       <label class="text" for="ChiffreAffaire">Chiffre d'Affaires d'ici 1 an: </label><br/>
+       <!-- <input type="" name="ChiffreAffaire" id="ChiffreAffaire" class="champ"  required/> -->
+       <p>
+        <br /> 
+        <select name="ChiffreAffaire" id="ChiffreAffaire"  class="champ" placeholder= "choisissez une fourchette">
+          <option value="inconnu"> </option>
+          <option value="tresBas">moins de 30K</option>
+          <option value="complementRevenu">30K - 50K</option>
+          <option value="raisonnable">50K - 80K</option>
+          <option value="grosChiffre">Plus de 80K</option> 
+        </select> </p>
        <br/><br/>
        <label class="text" for="ServicesSouhaites">Vos e-Besoins:* </label><br/>
        <textarea  rows="4" cols="50" type="textarea" name="ServicesSouhaites" id="ServicesSouhaites" class="champ1"  required/>

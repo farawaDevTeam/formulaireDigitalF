@@ -106,7 +106,7 @@ $pdf->Text (12,140,"Digital F.");
 $pdf->Output('../pdf/recapitulatif_'.$post['Prenom'].'_'.$post['Nom'].'_'.$post['avis'].'.pdf');
 }
 pdfgenerate($_POST);
-function sendmail{
+function sendmail($post){
 
 $mail = $post['Email']; // Déclaration de l'adresse de destination.
 if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $mail)) // On filtre les serveurs qui présentent des bogues.

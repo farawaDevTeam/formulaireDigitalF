@@ -233,7 +233,6 @@ font-family: 'Raleway', sans-serif;
 font-size: 14px;
 width: 90%;
 height: 25px;
--webkit-appearance: none;
 
 }
 .champ1
@@ -287,7 +286,7 @@ height: 90px;
 {
 	display: inline-block;
 	position: relative;
-	left: 5%;
+	left: 0%;
     
 }
 #legend2

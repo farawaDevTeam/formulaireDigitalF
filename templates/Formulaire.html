@@ -29,10 +29,11 @@
        <input type="text" name="Prenom" id="Prenom" class="champ" required/>
        <br/><br/>
        <label for="email" class="text">Votre e-mail :*</label><br/>
-
        <input type="email" name="Email" id="Email"  class="champ" required/>
        <br/><br/>
-       
+       <p class="text"> Votre Genre:*</p>
+        <input type="radio" name="sexe" value="Feminin" id="Feminin" /><label for="Feminin" class="text1">Feminin</label><br/><br/>
+        <input type="radio" name="sexe" value="Masculin" id="Masculin"/><label for="Masculin" class="text1">Masculin</label><br/><br/>
        <label for="profession" class="text">Votre profession :*</label><br/>
 
        <input name="Profession" id="Profession"  class="champ" required/>
@@ -47,24 +48,22 @@
        <label class="text" for="DomaineActivite">Domaine d'activité:* </label><br/>
        <input type="text" name="DomaineActivite" id="DomaineActivite" class="champ"  required/>
        <br/><br/>
-       <label class="text" for="ChiffreAffaire">Chiffre d'Affaires d'ici 1 an: </label><br/>
+       <label class="text" for="ChiffreAffaire">Chiffre d'Affaires d'ici 1 an: </label>
        <!-- <input type="" name="ChiffreAffaire" id="ChiffreAffaire" class="champ"  required/> -->
-       <p>
-        <br /> 
         <select name="ChiffreAffaire" id="ChiffreAffaire"  class="champ" placeholder= "choisissez une fourchette">
           <option value="inconnu"> </option>
-          <option value="tresBas">moins de 30K</option>
+          <option value="tresBas">Moins de 30K</option>
           <option value="complementRevenu">30K - 50K</option>
           <option value="raisonnable">50K - 80K</option>
           <option value="grosChiffre">Plus de 80K</option> 
-        </select> </p>
+        </select> 
        <br/><br/>
        <label class="text" for="ServicesSouhaites">Vos e-Besoins:* </label><br/>
        <textarea  rows="4" cols="50" type="textarea" name="ServicesSouhaites" id="ServicesSouhaites" class="champ1"  required/>
      </textarea>
        <br/><br/>
-        <p class="text">Envisagez vous de nous recontacter ? :</p>
-        <input type="radio" name="avis" value="true" id="yes" /><label for="yes" class="text1">Oui</label><br/><br/>
+        <p class="text">Envisagez vous de nous recontacter ? :*</p>
+        <input type="radio" name="avis" value="true" id="yes" /><label for="yes" class="text1" required>Oui</label><br/><br/>
         <input type="radio" name="avis" value="false" id="no"/><label for="no" class="text1">Non</label><br/><br/>
         <label class="text" for="NextRdv" hidden="true">Date d'un prochain Rdv ?: </label><br/>
         <input type="date" name="NextRdv" id="NextRdv" class="champ" hidden="true" -webkit-min-logical-width:300px/>
